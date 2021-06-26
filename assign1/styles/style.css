@@ -1,0 +1,442 @@
+/*
+filename:style.css
+author: Duy Phuong Nguyen
+created: 01/04/2020
+last modified: 01/04/2020
+description: stylesheet for assignment 1 task;
+*/
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+p, ul, h1, h2, dl, #enquire_form, legend, #submit_button{
+	font-family: 'Poppins', sans-serif;
+}
+
+ul, dl {
+	margin-top: 5px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 10px;
+	background-color: rgba(0,0,0,0.7);
+
+	font-family: 'Poppins', sans-serif;
+}
+
+
+
+.menu a {text-decoration: none;
+	color: red;
+	display: inline-block;
+	list-style: none;
+	padding: 1.3em 1em;
+	border: 0px solid rgba(0,0,0,0.7);}
+.menu:hover{
+	background-color: slategray;
+	transition: 0.4s;
+}
+
+
+body {
+	background-image: url("images/index.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.homepage_content{
+	background-color: slategray;
+	opacity: 0.95;
+	width: 90%;
+	padding: 40px;
+	margin: 470px auto auto;
+}
+
+.content{
+background-color: slategray;
+	opacity: 0.97;
+	width: 90%;
+	padding: 40px;
+	margin: 10px auto auto;
+
+}
+h1{
+	text-align: center;
+	color: darkred;
+	font-size: xx-large;
+}
+
+
+
+/*Enhancements 1: Slidershow*/
+.slider {
+	width: 700px;
+	height: 400px;
+	overflow: hidden;
+	border: 4px solid black;
+	
+}
+
+
+.middle{position: absolute;
+top: 50%;
+left: 50%;
+margin-top: 10px;
+transform: translate(-50%,-50%);}
+
+.navigation {
+	position: absolute;
+	bottom: 20px;
+	right: 32.5%;
+	display:flex;
+}
+
+.bar {
+	width: 50px;
+	height: 10px;
+	border: 3px solid darkgrey;
+	margin: 6px;
+	cursor: pointer;
+	
+}
+
+.bar:hover{
+	background-color: darkgrey;
+	
+}
+
+.sliders {
+	width: 500%;
+	height: 100%;
+	display: flex;
+}
+.slide{
+	width: 25%;
+	transition: 0.2s;
+
+}
+.slide img{
+	width: 100%;
+	height: 100%;
+	/*animation: autoslide 10s infinite;*/
+}
+
+input[name="radioslide"]
+{
+	position: absolute;
+	visibility: hidden;
+}
+
+#r1:checked ~ .s1{
+	margin-left: 0;
+}
+#r2:checked ~ .s1{
+	margin-left: -25%;
+}
+#r3:checked ~ .s1{
+	margin-left: -50%;
+}
+#r4:checked ~ .s1{
+	margin-left: -75%;
+}
+/*enhancements ends
+*/
+
+
+
+#homepage_1{
+	text-align: center;
+	border:4px inset black;
+	border-radius: 10px;
+	margin: 1em;
+	padding: 1em;
+	width: 50%;
+	margin-left: 25%;
+}
+
+#homepage_2 , #homepage_3{
+	width: 35%;
+	margin:2em;
+	align-content: center;
+	float: left;
+	margin-left: 10%;
+}
+#homepage_3{
+	float: right;
+}
+#homepage_2 img, #homepage_3 img{
+	text-align: center;
+	margin-top: 10px;
+}
+#homepage_2 img{
+	margin-top:10%;
+}
+
+#homepage_4{
+	text-align: center;
+	clear: both;
+	margin-bottom: 10px;
+}
+
+/*enhancements 02 neon-light button*/
+.button{
+	background-color:darkred;
+    color:black;
+    padding:10px 30px;
+   	border: none;
+    text-decoration:none;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    align-content: center;
+    overflow: hidden;
+}
+
+
+.button:hover{
+	text-decoration:none;
+    color: #FF0000 ;
+    background-color:darkred;
+    box-shadow: 0 0 10px #FF0000 , 0 0 40px #FF0000 , 0 0 80px #FF0000; 
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+/*enhancement ends*/
+
+
+#homepage_6{
+	margin-top: 15px;
+	text-align: center;
+
+}
+
+/*enhancement 03: image map*/
+#homepage_5{
+	text-align: center;
+	margin-top: 20px;
+	border: 0px;
+
+
+}
+/*enhancement end*/
+
+#homepage_hurry{
+	font-size: large;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 5%;
+}
+#homepage_hurry a{
+	text-decoration: none;
+	color: darkred;
+}
+
+footer{
+	background-color: rgba(0,0,0,0.95);
+	text-align: center;
+	color: darkred;
+	padding: 1em 0;
+	font-size: small;
+	border-top: 4px solid darkred;
+}
+
+
+/*about page*/
+dl{
+	width: 60%;
+	float: left;
+	clear: both;
+	margin-top: 8%;
+}
+
+dt {
+    clear: both;
+	float: left;
+    width: 40%;
+	text-align: left;
+    font-weight: bold;
+    
+
+}
+
+dd {
+    width: 55%;
+	margin-left: 30%;
+	text-align: left;
+
+
+}
+
+#about_2 h1{
+	margin-top: 400px;
+	clear: both;
+	font-weight: bold;
+}
+
+#about_photo img{
+	float: right;
+	width: 35%;
+	border: 4px double black;
+	padding: 20px;
+	margin-right: 20px;
+}
+
+#about_2 table{
+	text-align: center;
+	margin: 2em auto;
+	border: 4px solid #000000;
+	width: 90%;
+}
+
+#about_2 table th{
+	background-color: #808080;
+	border: 2px solid #000000;
+	padding: 10px;
+}
+
+#about_2 table td{
+	background-color: 	#880000  ;
+	border: 2px solid #000000;
+
+	min-width: 20%;
+}
+
+/*enquire page*/
+
+.enquire_form{
+	width:80%;
+    margin: 2em 0 1em 5em;
+}
+
+fieldset {
+    border: 0;
+}
+.enquire_form legend{
+	margin-left: 10%;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: darkred;
+}
+#submit_button{
+	text-align: center;
+}
+input[type=text], input[type=email],select,textarea {
+   
+    
+
+    margin: 6px 0 16px 20px;
+    padding:10px;
+    border:1px solid black;
+    border-radius:6px;
+    background-color: white;
+    color:black;
+   }
+
+#option1, #option2{
+	margin:0 2px 10px 20px;
+}
+#byemail, #byphone, #bypost{
+	margin: 0 2px 10px 25px;
+}
+
+
+/*enhancements page*/
+.enhancements{
+	text-align: left;
+
+	padding: 10px 30% 0 30%;
+}
+
+.enhancements img{
+	margin: 10px 0 10px 0;
+	width: 100%;
+}
+
+.enhancements h2{
+	color: darkred;
+	margin-top: 10px;
+}
+
+/*product page*/
+aside{
+	float: right;
+	position: fixed;
+	margin: 5% 0 0 55%;
+	width: 25%;
+	top: 10%;
+	border: 2px inset darkred;
+    border-radius: 6px;
+    padding: 5px;
+ 
+   
+}
+
+aside ul, ol{
+	margin-left: 30px;
+}
+aside ul{
+	font-size: small;
+}
+
+#product_content{
+	clear: both;
+	width: 50%;
+
+}
+
+#product_content h2{
+	margin-top: 10%;
+}
+
+#product_content h1{
+	font-size: xx-large;
+	font-family: 'Poppins', sans-serif;
+	font-variant: normal;
+}
+.product_inside{
+	clear: both;
+}
+.product_inside img{
+	width: 20%;
+
+	float: right;
+}
+#combo{
+	width: 40%;
+	margin-top: 20px;
+}
+
+#product_table table{
+	width: 50%;
+	margin-left: 10%;
+	padding: 5px;
+	border: 2px solid black;
+    border-radius:5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#product_table table th{
+	background-color: gray;
+	color: black;
+	border: 1px solid black;
+	width: 20%;
+}
+
+#product_table table td{
+	background-color: darkred;
+	color: black;
+	border:1px solid black;
+	font-size: large;
+}
+
+#product_table h2{
+	margin-top: 10px;
+}

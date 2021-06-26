@@ -1,0 +1,18 @@
+5.The make and model of the cars which cost below $15,000.00.
+
+SELECT make, model
+FROM cars
+WHERE price <=15000;
+
+6. Average price of FORD cars.
+
+SELECT AVG(price) 
+FROM cars
+WHERE make = 'ford'
+GROUP BY make;
+
+7.Cars manufactured in 2010 or later and costing $15,000 or more.
+
+SELECT make, model 
+FROM cars
+WHERE yom >= 2010 AND price >= 15000;
